@@ -45,37 +45,37 @@ var a = 1;
 ## note
 
 {% note %}
-#### Header
+Header
 (without define class style)
 {% endnote %}
 
 {% note default %}
-#### Header
+Header
 (without define class style)
 {% endnote %}
 
 {% note primary %}
-#### Header
+Header
 (without define class style)
 {% endnote %}
 
 {% note info %}
-#### Header
+Header
 (without define class style)
 {% endnote %}
 
 {% note success %}
-#### Header
+Header
 (without define class style)
 {% endnote %}
 
 {% note warning %}
-#### Header
+Header
 (without define class style)
 {% endnote %}
 
 {% note danger %}
-#### Header
+Header
 (without define class style)
 {% endnote %}
 

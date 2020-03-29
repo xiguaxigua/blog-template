@@ -12,11 +12,11 @@
   {%- endif %}
   <script>
     Vue.use(Vuep)
-    window.onload = function () {
+    window.addEventListener('DOMContentLoaded', () => {
       new window.Vue({
         delimiters: ['${', '}']
       }).$mount('.post-body')
-    }
+    })
   </script>
 {%- endif %}
 
