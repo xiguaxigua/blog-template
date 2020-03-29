@@ -3,6 +3,23 @@
 <meta name="theme-color" content="{{ theme.android_chrome_color }}">
 <meta name="generator" content="Hexo {{ hexo_version }}">
 
+{%- if theme.vuep.enable %}
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/figure-bed@0.0.27/images/vuep.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/figure-bed@0.0.26/images/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/figure-bed@0.0.27/images/vuep.min.js"></script>
+  {%- if theme.vuep.es6 %}
+    <script src="//cdn.jsdelivr.net/npm/babel-standalone/babel.min.js"></script>
+  {%- endif %}
+  <script>
+    Vue.use(Vuep)
+    window.onload = function () {
+      new window.Vue({
+        delimiters: ['${', '}']
+      }).$mount('.post-body')
+    }
+  </script>
+{%- endif %}
+
 {%- if theme.favicon.apple_touch_icon %}
   <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for(theme.favicon.apple_touch_icon) }}">
 {%- endif %}

@@ -9,6 +9,10 @@
 # Useful if you want to comment some options from NexT `_config.yml` by `next.yml` without editing default config.
 override: false
 
+vuep:
+  enable: true
+  es6: false
+
 # Console reminder if new version released.
 reminder: false
 
@@ -358,7 +362,7 @@ codeblock:
   # Code Highlight theme
   # Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic
   # See: https://github.com/chriskempson/tomorrow-theme
-  highlight_theme: normal
+  highlight_theme: night
   # Add copy button on codeblock
   copy_button:
     enable: false
@@ -798,7 +802,7 @@ note:
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
   style: simple
-  icons: false
+  icons: true
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
   light_bg_offset: 0
