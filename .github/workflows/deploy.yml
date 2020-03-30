@@ -1,7 +1,7 @@
 name: 博客更新
 on:
   push:
-    branch: master
+    branch: dev
 
 jobs:
   update-blog:
@@ -21,3 +21,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          publish_branch: master
